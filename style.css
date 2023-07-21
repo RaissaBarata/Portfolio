@@ -1,0 +1,257 @@
+body {
+  background-color: rgb(70, 73, 79);
+  color: rgb(196, 196, 196);
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  color: white;
+  font-size: 160px;
+  font-weight: 700;
+  margin: 0;
+}
+
+h2 {
+  color: white;
+  margin: 3px;
+  font-weight: 300;
+  text-align: center;
+}
+
+h3 {
+  color: white;
+  margin: 0;
+}
+
+h4 {
+  color: white;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-lista {
+  display: flex;
+  padding: 10px 10px 50px 10px;
+}
+
+.menu-lista li {
+  color: rgb(255, 255, 255);
+  list-style: none;
+  margin: 5px 10px;
+  cursor: pointer;
+}
+
+.menu-lista li:hover {
+  color: grey;
+}
+
+.apresentacao {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+img {
+  width: 300px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.apresentacao__titulo {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.apresentacao__p {
+  font-size: 28px;
+  text-align: center;
+  /*margin-top: -20px;*/
+}
+
+.redes-sociais li {
+  list-style: none;
+}
+
+.redes-sociais__lista {
+  display: flex;
+}
+
+.redes-sociais__item {
+  padding: 30px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+footer ul {
+  display: flex;
+  padding: 30px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+a:hover {
+  color: rgb(255, 0, 166);
+}
+
+.opcoes {
+  display: flex;
+  padding: 20px;
+}
+
+.opcoes a {
+  margin: 10px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.sociais {
+  width: 100px;
+  height: 320px;
+  background-color: rgb(255, 0, 166);
+  border-radius: 30px 0 0 30px;
+  position: fixed;
+  right: 0;
+  top: 30vh;
+}
+
+.social {
+  width: 100%;
+  height: 33%;
+}
+
+.wave {
+  fill: rgb(10, 10, 10);
+  width: 100vw;
+  height: 65vh;
+  position: fixed;
+  bottom: -220px;
+  left: 0;
+}
+
+.social svg {
+  fill: rgb(255, 255, 255);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detalhes {
+  width: 50%;
+}
+
+.detalhes td {
+  padding: 30px;
+}
+
+.titulo {
+  font-size: 50px;
+}
+
+.projetos-redes-sociais {
+  position: relative;
+}
+
+.sobre-mim {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.formulario form {
+  width: 50%;
+}
+
+.formulario .form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-row .form-control {
+  width: 50%;
+  border: none;
+  font-size: 16px;
+  padding: 5px;
+  margin-top: 20px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.form-row .form-control:focus,
+.form-message:focus {
+  outline: 0;
+  background-color: rgb(196, 196, 196);
+}
+
+.form-message {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  padding: 0;
+  resize: none;
+  margin-top: 5px;
+}
+
+.formulario button {
+  width: 100%;
+  background-color: rgb(10, 10, 10);
+  color: rgb(255, 255, 255);
+  border: none;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .sociais {
+    display: none;
+  }
+
+  .detalhes {
+    width: 80%;
+  }
+
+  .detalhes td {
+    padding: 5px;
+  }
+
+  .formulario {
+    width: 80%;
+  }
+
+  .formulario .form-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-row .form-control {
+    width: 100%;
+    margin-top: 5px;
+  }
+}
