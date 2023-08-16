@@ -57,6 +57,7 @@ h4 {
 
 img {
   width: 300px;
+  max-width: 300px;
   margin-top: 20px;
   margin-bottom: 30px;
 }
@@ -140,6 +141,7 @@ a:hover {
   fill: rgb(10, 10, 10);
   width: 100vw;
   height: 65vh;
+  max-height: 768px;
   position: fixed;
   bottom: -220px;
   left: 0;
